@@ -1,0 +1,32 @@
+.btn {
+    background-color: $color-primary-light;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: $font-display;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    cursor: pointer;
+    transition: all .3s;
+    
+    &:hover {background-color: $color-primary-dark;}
+}
+
+.mobile-btn {
+    float: right;
+    margin-top: 3rem;
+    cursor: pointer;
+    display: none;
+    background-color: red;
+    @media only screen and (max-width: $bp-small-1) { display: inline-block; }
+
+    &__icon {
+        fill: var(--color-primary-light);
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+.mb-hg { margin-top: 8rem;}
+.mb-mb {margin-bottom: 6rem;}
